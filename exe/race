@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift './lib'
+
+require 'racing_tui'
+
+terminal = RacingTui::Terminal.new
+circuit = RacingTui::Circuit.new('01')
+
+100.times do |idx|
+  terminal.puts(circuit.mark(idx), [0, 0])
+  terminal.puts("#{idx}", [0, 0])
+  sleep 0.1
+end

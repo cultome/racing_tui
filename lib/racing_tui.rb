@@ -1,6 +1,6 @@
-require "racing_tui/version"
+require 'tco'
+require 'io/console'
 
-module RacingTui
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require "racing_tui/version"
+require "racing_tui/circuit"
+require "racing_tui/terminal"
